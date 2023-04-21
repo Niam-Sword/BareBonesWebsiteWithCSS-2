@@ -37,6 +37,16 @@
     }
   </style>
   
+  <script>
+    var pettingcounter = 0;
+    
+    function incrementCounter()
+    {
+      pettingcounter++;
+      document.getElementById("counterplaceholder").innerHTML = "Total number of times the dog has been pet: " + pettingcounter;
+    }
+  </script>
+  
   
   
 <body>
@@ -193,7 +203,7 @@
         
         <center>
         <p id="counterplaceholder">The number of times you pet the dog will show up here.</p>
-        <button>Click to pet dog!<br><img src="https://i.imgur.com/zvFTJux.png"></button>
+        <button onclick="incrementCounter();">Click to pet dog!<br><img src="https://i.imgur.com/zvFTJux.png"></button>
         </center>
         
         <div id="purplebox2" class="w3-bottom purplebox w3-container w3-flat-amethyst"></div>
